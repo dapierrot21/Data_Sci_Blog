@@ -11,3 +11,7 @@ class Article(models.Model):
     date = models.DateTimeField(auto_now_add=True)
     # add in thumbnail later
     # add in author later
+
+    # __str__ is a built in function which defines how this class is going to look. Both in the admin section and the shell.
+    def __str__(self):
+        return self.title
