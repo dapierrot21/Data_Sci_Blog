@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import path, include
 # from "." the dot points to your current directory
 from . import views
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -26,3 +27,6 @@ urlpatterns = [
     # Path to the home page. Will look for just .com
     path('', views.homepage),
 ]
+
+
+urlpatterns += staticfiles_urlpatterns()

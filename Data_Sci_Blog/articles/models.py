@@ -15,3 +15,6 @@ class Article(models.Model):
     # __str__ is a built in function which defines how this class is going to look. Both in the admin section and the shell.
     def __str__(self):
         return self.title
+    # This function cuts the article up to its 50th char.
+    def snippet(self):
+        return self.body[:50] + '...'
