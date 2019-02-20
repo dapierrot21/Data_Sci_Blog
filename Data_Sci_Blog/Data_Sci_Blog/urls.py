@@ -28,5 +28,5 @@ urlpatterns = [
     path('', views.homepage),
 ]
 
-
+# checks to see if we are in debug mode, if True it will append the urlpatterns.
 urlpatterns += staticfiles_urlpatterns()

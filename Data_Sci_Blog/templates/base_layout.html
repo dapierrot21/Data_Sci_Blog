@@ -1,0 +1,24 @@
+<!-- this base layout will show on all templates -->
+
+<!-- static module -->
+{% load static from staticfiles %}
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Articles</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="{% static 'style.css'%}" />
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+           <!-- if you come across a block content block i want you to add it here  -->
+           {% block content %}
+           {% endblock %}
+        </div>
+    </body>
+</html>    
